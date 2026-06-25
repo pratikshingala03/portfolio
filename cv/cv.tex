@@ -1,0 +1,160 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{titlesec}
+
+% Define colors
+\definecolor{primarycolor}{RGB}{37, 99, 235}
+\definecolor{textcolor}{RGB}{31, 41, 55}
+\definecolor{lightgray}{RGB}{107, 114, 128}
+
+% Hyperlink color
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primarycolor,
+    urlcolor=primarycolor
+}
+
+% Title formatting
+\titleformat{\section}
+{\color{primarycolor}\large\bfseries}
+{}{0pt}{}[\titlerule]
+
+\titleformat{\subsection}
+{\bfseries}
+{}{0pt}{}
+
+\titlespacing{\section}{0pt}{12pt}{6pt}
+\titlespacing{\subsection}{0pt}{8pt}{4pt}
+
+% Set default text color
+\color{textcolor}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Custom commands
+\newcommand{\cvheader}[5]{
+    \centering
+    {\LARGE\bfseries #1} \\
+    \vspace{3pt}
+    {\small #2, #3 $\cdot$ \href{tel:#4}{#4} $\cdot$ \href{mailto:#5}{#5}} \\
+    \vspace{2pt}
+    {\small \href{https://linkedin.com/in/pratikshingala03}{\faLinkedin\ LinkedIn} $\cdot$ \href{https://github.com/pratikshingala03}{\faGithub\ GitHub}}
+    \vspace{10pt}
+}
+
+\newcommand{\cventry}[4]{
+    \noindent\textbf{#1} \hfill {\small\color{lightgray}#2} \\
+    {\small\color{lightgray}#3} \\
+    #4
+    \vspace{6pt}
+}
+
+\newcommand{\cvsubentry}[3]{
+    \noindent\textbf{#1} \\
+    {\small\color{lightgray}#2} \\
+    #3
+    \vspace{4pt}
+}
+
+\newcommand{\cvitem}[1]{
+    \item #1
+}
+
+\begin{document}
+
+% Header
+\cvheader{PRATIK SHINGALA}{Berlin, Germany}{+49 176 93192 102}{+491769319210}{Pratikshingala03@gmail.com}
+
+% Professional Summary
+\section{PROFESSIONAL SUMMARY}
+Analytical and detail-oriented Computer Science student with a strong foundation in data analytics, database management, and process automation. Proven track record of optimizing operational workflows, managing payroll budgets, and handling complex datasets at Amazon and Burgermeister. Seeking to leverage technical expertise in Python, SQL, and cloud infrastructure to drive digital transformation, automate compliance workflows, and deliver actionable insights in a Tax Technology or Tax Analytics role.
+
+% Core Competencies
+\section{CORE COMPETENCIES}
+
+\noindent
+\textbf{Data \& Analytics:} Python (Pandas, NumPy), SQL (MySQL, PostgreSQL), Data Visualization, Trend Analysis \\
+\textbf{Tax \& Finance Operations Support:} Payroll Budgeting, Vendor Management, Contract Administration, Cost Control \\
+\textbf{Systems \& Automation:} Process Optimization, Google Workspace, Cloud Computing (Google Cloud), Jira \\
+\textbf{Soft Skills:} Analytical Problem Solving, Cross-functional Collaboration, Strict Attention to Detail, Intercultural Communication
+
+% Professional Experience
+\section{PROFESSIONAL EXPERIENCE}
+
+\cventry{JUNIOR OPERATION MANAGER}{Nov 2023 – Present}{Burgermeister, Berlin, Germany}
+{
+\begin{itemize}[leftmargin=15pt, itemsep=3pt]
+    \cvitem{Financial \& Administrative Control: Oversee employee records, manage payroll budgeting, and administer contracts, ensuring strict compliance with operational and financial guidelines.}
+    \cvitem{Budget \& Cost Tracking: Track departmental budgets and manage vendor relationships to control operational costs and support data-driven financial decisions.}
+    \cvitem{Process Optimization: Designed and implemented an automated staff scheduling system that minimized scheduling conflicts and significantly improved workforce utilization.}
+\end{itemize}
+}
+
+\cventry{JUNIOR DATA ANALYST}{Oct 2022 – Oct 2023}{Amazon, Munich, Germany}
+{
+\begin{itemize}[leftmargin=15pt, itemsep=3pt]
+    \cvitem{Data-Driven Insights: Analyzed complex sales trends and customer data to identify revenue-generating opportunities and provide actionable recommendations to management.}
+    \cvitem{Inventory \& Supply Chain Monitoring: Monitored real-time inventory metrics across multiple regional warehouses to enable proactive supply chain decisions and prevent stockouts.}
+    \cvitem{Reporting \& Visualization: Prepared comprehensive reports and data visualizations for leadership to inform operational adjustments and performance reviews.}
+\end{itemize}
+}
+
+\cventry{WORKING STUDENT - AI-POWERED DEVELOPER TOOLS}{Oct 2020 – Oct 2022}{Amazon, Surat, India}
+{
+\begin{itemize}[leftmargin=15pt, itemsep=3pt]
+    \cvitem{Automation \& Logic Building: Developed and maintained software tools integrating large language models to automate routine checks and improve workflow quality.}
+    \cvitem{Process Efficiency: Built features to detect workflow gaps, automated repetitive analysis tasks, and optimized developer productivity.}
+\end{itemize}
+}
+
+% Education
+\section{EDUCATION}
+
+\cvsubentry{BACHELOR OF COMPUTER SCIENCE}{Gisma University of Applied Sciences – Berlin, Germany | Oct 2023 – Present}
+{
+Relevant Coursework: Database Systems (SQL), Software Engineering, Data Structures \& Algorithms, Cloud Computing.
+}
+
+% Certifications
+\section{CERTIFICATIONS \& ADDITIONAL TRAINING}
+
+\begin{itemize}[leftmargin=15pt, itemsep=4pt]
+    \cvitem{\textbf{Google Cloud Fundamentals: Core Infrastructure} | Coursera (Jan 2025)}
+    \cvitem{\textbf{Developing a Google SRE Culture} | Coursera (Jun 2025)}
+    \cvitem{\textbf{Advent of Cyber Event} (Cybersecurity \& Scripting) | TryHackMe (Nov 2025) \\
+    Applied Linux and scripting tools to investigate vulnerabilities, automate repetitive data analysis tasks, and document step-by-step technical compliance recommendations.}
+\end{itemize}
+
+% Technical Skills
+\section{TECHNICAL SKILLS}
+
+\noindent
+\textbf{Programming Languages:} Python, SQL, JavaScript, Bash \\
+\textbf{Data Tools:} Pandas, NumPy, Excel, Tableau, Power BI \\
+\textbf{Databases:} MySQL, PostgreSQL, MongoDB \\
+\textbf{Cloud Platforms:} Google Cloud Platform, AWS \\
+\textbf{Tools \& Platforms:} Git, GitHub, Jira, Google Workspace, VS Code \\
+\textbf{Operating Systems:} Linux, Windows, macOS
+
+% Languages
+\section{LANGUAGES}
+
+\begin{itemize}[leftmargin=15pt, itemsep=3pt]
+    \cvitem{\textbf{English:} Fluent}
+    \cvitem{\textbf{German:} Professional working proficiency (Intermediate)}
+    \cvitem{\textbf{Gujarati:} Native}
+    \cvitem{\textbf{Hindi:} Native}
+\end{itemize}
+
+% Hobbies & Interests
+\section{HOBBIES \& INTERESTS}
+
+Following tech and financial industry trends, podcasts, and seminars. Yoga, strength training, and continuous learning.
+
+\end{document}
